@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css">
+  <title>Data Science Path</title>
+</head>
+
+<body>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+
+  <!-- nav starts here -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='img/apple.svg')}}" alt="" width="30"
+          height="24" class="d-inline-block align-top">DataSciencePath</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Link3</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner starts here -->
+  <div class="card text-white rounded-0 border-0">
+    <img src="{{ url_for('static', filename='/img/041.jpg')}}" alt="" width="100%" height="500px">
+    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+      <h1 class="h1 text-danger"><b>Path for Data Science is pretty</b></h1>
+    </div>
+  </div>
+
+
+
+  <!-- cards starts here -->
+  <div class="container pt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/card_1.jpg')}}" class="card-img-top" alt="..." />
+          <div class="card-body bg-success text-white">
+            <h5 class="card-title">Beginners</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/card_2.jpg')}}" class="card-img-top" alt="..." />
+          <div class="card-body bg-success text-white">
+            <h5 class="card-title">Intermediate</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="{{ url_for('static', filename='img/card_3.jpg')}}" class="card-img-top" alt="..." />
+          <div class="card-body bg-success text-white">
+            <h5 class="card-title">Advance</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- full width card -->
+      <div class="card md-6" style="width: 100%; height: 20rem;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='img/little_girl.png')}}" alt="..." class="img-fluid"
+              style="height: 19rem;" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Author's Desk</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.This is a wider card with supporting text below
+                as a natural lead-in to
+                additional content. This content is a little bit longer.This is a wider card with supporting text below
+                as a natural lead-in to
+                additional content. This content is a little bit longer.This is a wider card with supporting text below
+                as a natural lead-in to
+                additional content. This content is a little bit longer.This is a wider card with supporting text below
+                as a natural lead-in to
+                additional content. This content is a little bit longer.This is a wider card with supporting text below
+                as a natural lead-in to
+                additional content. This content is a little bit longer.
+              </p>
+              <p class="card-text">
+                <button type="button" class="btn btn-success">Learn More</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer starts here -->
+  <div class="footer pt-5">
+    <footer class="bg-success text-white text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="width: 70%;">
+            <h5 class="text-uppercase">Datasciencepath</h5>
+            <form method="POST">
+              Email: <input type="text" name="email" , placeholder="Enter your email" class="form-control" /></br>
+              <input type="submit" name="submit" value="Subscribe" , class="btn btn-primary">
+            </form>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+              voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="#">datasciencepath.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
