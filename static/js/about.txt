@@ -1,1 +1,1 @@
-This folder holds all JavaScript files
+This folder holds all JavaScript files, currently we dont have any js file. In this project i used js using cdn only
