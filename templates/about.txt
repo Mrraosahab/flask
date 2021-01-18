@@ -1,0 +1,1 @@
+This folder holds your HTML files. Please ensure that folder name should be same as it is.
